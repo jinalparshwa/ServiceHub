@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.servicehub.Activity.Add_Address">
+
+
+    <RelativeLayout
+        android:id="@+id/r_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGreen">
+
+
+        <com.servicehub.Custom_Compo.CustomTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SUBMIT"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_18_sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include layout="@layout/toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170dp"
+                android:layout_marginTop="@dimen/_25dp"
+                android:background="@drawable/bg_five" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_170dp"
+                android:layout_height="@dimen/_170dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_15dp"
+                android:background="@drawable/circle_shadow"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/service_image"
+                    android:layout_width="@dimen/_35dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:layout_marginTop="@dimen/_50dp"
+                    android:src="@drawable/electrical" />
+
+               <TextView
+                    android:id="@+id/service_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:text="Locate me"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_13_sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:src="@drawable/arrow_right_bg" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_5dp">
+
+
+            <Spinner
+                android:id="@+id/spinner_city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:layout_width="@dimen/_10dp"
+                android:layout_height="@dimen/_10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10dp"
+                android:src="@drawable/down" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@color/colorgray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_5dp">
+
+
+            <Spinner
+                android:id="@+id/spinner_area"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:layout_width="@dimen/_10dp"
+                android:layout_height="@dimen/_10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10dp"
+                android:src="@drawable/down" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@color/colorgray" />
+
+        <com.servicehub.Custom_Compo.Custom_Edittext
+            android:id="@+id/landmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@android:color/transparent"
+            android:editable="false"
+            android:hint="Landmark"
+            android:orientation="horizontal"
+            android:singleLine="true"
+            android:textSize="@dimen/_18_sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@color/colorgray" />
+
+        <com.servicehub.Custom_Compo.Custom_Edittext
+            android:id="@+id/full_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@android:color/transparent"
+            android:hint="Full Address"
+            android:orientation="horizontal"
+            android:singleLine="true"
+            android:textSize="@dimen/_18_sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@color/colorgray" />
+    </LinearLayout>
+
+
+</RelativeLayout>

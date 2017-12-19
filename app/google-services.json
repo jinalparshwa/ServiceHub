@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "866321259236",
+    "firebase_url": "https://servicehub-156205.firebaseio.com",
+    "project_id": "servicehub-156205",
+    "storage_bucket": "servicehub-156205.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866321259236:android:db105d3ee5c47f58",
+        "android_client_info": {
+          "package_name": "com.servicehub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866321259236-hh3so9np0onpthg2qacqj38b6d073q1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.servicehub",
+            "certificate_hash": "14C27D1A5371C61DAC3F5136C462D74933E180B2"
+          }
+        },
+        {
+          "client_id": "866321259236-cluah8dkntakb28921m55uqp9e6i74l5.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "866321259236-3nmduqfmgkphs7t0bu7s4s8ocl7em5kv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgr94-cWsPZ_ObVMSwpLEFYvka7pt9AU0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866321259236-cluah8dkntakb28921m55uqp9e6i74l5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rr_order"
+        android:layout_width="@dimen/_300dp"
+        android:layout_height="@dimen/_120dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_15dp">
+
+        <ImageView
+            android:layout_width="@dimen/_280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_one" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_300dp"
+            android:layout_height="@dimen/_300dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/_5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:orientation="vertical">
+
+                <com.servicehub.Custom_Compo.CustomTextview_Bold
+                    android:id="@+id/txt_order_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/__3dp"
+                    android:text="I Want plumber"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_18_sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15dp"
+                        android:layout_height="@dimen/_15dp"
+                        android:layout_marginTop="@dimen/_5dp"
+                        android:src="@drawable/time" />
+
+                    <com.servicehub.Custom_Compo.CustomTextview
+                        android:id="@+id/txt_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/__3dp"
+                        android:text="12:30:00"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13_sp" />
+
+                    <com.servicehub.Custom_Compo.CustomTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/__3dp"
+                        android:text="TO"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13_sp" />
+
+                    <com.servicehub.Custom_Compo.CustomTextview
+                        android:id="@+id/txt_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/__3dp"
+                        android:text="01:00:00"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13_sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_15dp"
+                        android:layout_height="@dimen/_15dp"
+                        android:layout_marginTop="@dimen/_5dp"
+                        android:src="@drawable/right" />
+
+                    <com.servicehub.Custom_Compo.CustomTextview
+                        android:id="@+id/txt_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/__3dp"
+                        android:paddingLeft="@dimen/__3dp"
+                        android:text="DELIVERED"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13_sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_120dp"
+                android:layout_height="@dimen/_120dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageView"
+                    android:layout_width="@dimen/_120dp"
+                    android:layout_height="@dimen/_120dp"
+                    android:layout_marginTop="@dimen/_7dp"
+                    android:background="@drawable/circle_shadow" />
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center">
+
+                    <com.servicehub.Custom_Compo.CustomTextview_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/__3dp"
+                        android:text="INR"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_10_sp" />
+
+                    <com.servicehub.Custom_Compo.CustomTextview_Bold
+                        android:id="@+id/txt_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/__3dp"
+                        android:text="300.00/-"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_15_sp" />
+
+                </LinearLayout>
+
+                <com.servicehub.Custom_Compo.CustomTextview_Bold
+                    android:id="@+id/txt_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paid"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/_15_sp"
+                    android:layout_below="@+id/ll"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

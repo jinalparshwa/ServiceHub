@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/emp_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.servicehub.Activity.MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/emp_notify_bar"
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:src="@drawable/menu_drawer" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/splach_screen_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_new_inquiry"
+            android:layout_width="@dimen/_130dp"
+            android:layout_height="@dimen/_130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15dp">
+
+            <ImageView
+                android:layout_width="@dimen/_130dp"
+                android:layout_height="@dimen/_130dp"
+                android:src="@drawable/new_inq">
+
+            </ImageView>
+
+            <com.servicehub.Custom_Compo.CustomTextview
+                android:id="@+id/count_new_inquiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15_sp" />
+
+            <com.servicehub.Custom_Compo.CustomTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/count_new_inquiry"
+                android:layout_centerInParent="true"
+                android:text="New Inquiry"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15_sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_inquiry"
+            android:layout_width="@dimen/_130dp"
+            android:layout_height="@dimen/_130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10dp">
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="@dimen/_130dp"
+                android:layout_height="@dimen/_130dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/feedback" />
+
+            <com.servicehub.Custom_Compo.CustomTextview
+                android:id="@+id/count_my_inquiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15_sp" />
+
+            <com.servicehub.Custom_Compo.CustomTextview
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/count_my_inquiry"
+                android:layout_centerInParent="true"
+                android:text="My Inquiry"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15_sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_earning"
+            android:layout_width="@dimen/_130dp"
+            android:layout_height="@dimen/_130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10dp">
+
+            <ImageView
+                android:layout_width="@dimen/_130dp"
+                android:layout_height="@dimen/_130dp"
+                android:src="@drawable/erning">
+
+            </ImageView>
+
+            <com.servicehub.Custom_Compo.CustomTextview
+                android:id="@+id/count_my_earning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15_sp" />
+
+            <com.servicehub.Custom_Compo.CustomTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/count_my_earning"
+                android:layout_centerInParent="true"
+                android:text="My Earnings"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15_sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/emp_nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_employee_header"
+        app:itemTextColor="@color/colorGreen"
+        app:itemIconTint="@color/colorGreen"
+        app:menu="@menu/activity_employee_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

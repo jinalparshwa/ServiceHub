@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  2.5625 -->
+
+
+    <!--Splash Screen-->
+
+    <dimen name="splash_image_padding">76.875dp</dimen>
+    <!--Activity Verification_Otp_Code-->
+
+    <dimen name="ac_veri_image_width">384.375dp</dimen>
+    <dimen name="ac_veri_image_height">153.75dp</dimen>
+
+    <!--Activity Login-->
+
+    <dimen name="_2dp">5.125dp</dimen>
+    <dimen name="_3dp">-7.6875dp</dimen>
+    <dimen name="__3dp">7.6875dp</dimen>
+    <dimen name="_4.5dp">11.53125dp</dimen>
+    <dimen name="_5dp">12.8125dp</dimen>
+    <dimen name="_7dp">17.9375dp</dimen>
+    <dimen name="__7dp">17.9375dp</dimen>
+    <dimen name="_10dp">25.625dp</dimen>
+    <dimen name="_12dp">30.75dp</dimen>
+    <dimen name="_14dp">35.875dp</dimen>
+    <dimen name="_15dp">38.4375dp</dimen>
+    <dimen name="_20dp">51.25dp</dimen>
+    <dimen name="_25dp">64.0625dp</dimen>
+    <dimen name="_26dp">66.625dp</dimen>
+    <dimen name="_30dp">76.875dp</dimen>
+    <dimen name="_35dp">89.6875dp</dimen>
+    <dimen name="_40dp">102.5dp</dimen>
+    <dimen name="_50dp">128.125dp</dimen>
+    <dimen name="_55dp">140.9375dp</dimen>
+    <dimen name="_56dp">143.25dp</dimen>
+    <dimen name="_60dp">153.75dp</dimen>
+    <dimen name="_62dp">158.875dp</dimen>
+    <dimen name="_65dp">166.5625dp</dimen>
+    <dimen name="_70dp">179.375dp</dimen>
+    <dimen name="_75dp">192.1875dp</dimen>
+    <dimen name="_80dp">205dp</dimen>
+    <dimen name="_90dp">230.625dp</dimen>
+    <dimen name="_100dp">256.25dp</dimen>
+    <dimen name="_110dp">281.875dp</dimen>
+    <dimen name="_115dp">294.6875dp</dimen>
+    <dimen name="_120dp">307.5dp</dimen>
+    <dimen name="_130dp">333.125dp</dimen>
+    <dimen name="_150dp">384.375dp</dimen>
+    <dimen name="_170dp">435.625dp</dimen>
+    <dimen name="_200dp">512.5dp</dimen>
+    <dimen name="_210dp">538.125dp</dimen>
+    <dimen name="_250dp">640.625dp</dimen>
+    <dimen name="_260dp">666.25dp</dimen>
+    <dimen name="_280dp">717.5dp</dimen>
+    <dimen name="_300dp">768.75dp</dimen>
+    <dimen name="_337dp">863.5625dp</dimen>
+    <dimen name="_340dp">871.25dp</dimen>
+
+
+    <!--Text Size-->
+    <dimen name="_7_sp">17.9375sp</dimen>
+    <dimen name="_10_sp">25.625sp</dimen>
+    <dimen name="_12_sp">30.75dp</dimen>
+    <dimen name="_13_sp">33.3125sp</dimen>
+    <dimen name="_15_sp">38.4375sp</dimen>
+    <dimen name="_18_sp">46.125sp</dimen>
+    <dimen name="_20_sp">51.25sp</dimen>
+
+    <dimen name="ac_veri_tag_text_size">58.9375sp</dimen>
+    <dimen name="ac_veri_text_size">46.125sp</dimen>
+
+</resources>
